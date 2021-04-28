@@ -1,7 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - Piracy
+    - CameraSwitch
+    - Interactable
     - Quit
     - ThirdPersonMovement
     Cinemachine.dll:
@@ -56,6 +57,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 104
@@ -63,35 +68,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11932}
+      Script: {instanceID: 11936}
     - Class: 114
-      Script: {instanceID: 11968}
+      Script: {instanceID: 11972}
     - Class: 114
-      Script: {instanceID: 12280}
+      Script: {instanceID: 12284}
     - Class: 114
-      Script: {instanceID: 12934}
+      Script: {instanceID: 12484}
     - Class: 114
-      Script: {instanceID: 13156}
+      Script: {instanceID: 12940}
     - Class: 114
-      Script: {instanceID: 13534}
+      Script: {instanceID: 13162}
     - Class: 114
-      Script: {instanceID: 13654}
+      Script: {instanceID: 13540}
     - Class: 114
-      Script: {instanceID: 13838}
+      Script: {instanceID: 13660}
     - Class: 114
-      Script: {instanceID: 13978}
+      Script: {instanceID: 13844}
     - Class: 114
-      Script: {instanceID: 14592}
+      Script: {instanceID: 13984}
     - Class: 114
-      Script: {instanceID: 14766}
+      Script: {instanceID: 14032}
     - Class: 114
-      Script: {instanceID: 14992}
+      Script: {instanceID: 14602}
     - Class: 114
-      Script: {instanceID: 15154}
+      Script: {instanceID: 14776}
     - Class: 114
-      Script: {instanceID: 15644}
+      Script: {instanceID: 15002}
     - Class: 114
-      Script: {instanceID: 15684}
+      Script: {instanceID: 15652}
+    - Class: 114
+      Script: {instanceID: 15692}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -321,6 +328,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.ProBuilder.dll
     namespaceName: UnityEngine.ProBuilder
     className: PolyShape
+  - hash:
+      serializedVersion: 2
+      Hash: bf4698a3b70ae92d7166ab31c3de7991
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Interactable
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -665,6 +678,12 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: 8168b15e146656a63188da16af19e137
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraSwitch
+  - hash:
+      serializedVersion: 2
       Hash: f087c23fbfa15475a0d110af46fb0496
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -681,6 +700,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineTargetGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Tutorial
   - hash:
       serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
@@ -899,12 +924,6 @@ ScriptsOnlyBuild:
     className: CinemachineInputProvider
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Piracy
-  - hash:
-      serializedVersion: 2
       Hash: ffd3ed4fcd23b3e7745287c99a637247
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -1086,4 +1105,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/game.unity
-  playerPath: C:/Users/Andrew/RPG/RPG-Unity-Builds/PiracyTest/RPG no name yet.exe
+  playerPath: C:/Users/Andrew/RPG/RPG-Unity-Builds/KBMovement/Platformer.exe

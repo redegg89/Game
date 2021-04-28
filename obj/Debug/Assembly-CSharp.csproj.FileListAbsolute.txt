@@ -1,0 +1,2 @@
+C:\Users\Andrew\RPG\RPG that I keep changing the engine of every 5 seconds\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\Andrew\RPG\RPG that I keep changing the engine of every 5 seconds\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
