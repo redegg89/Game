@@ -1,5 +1,5 @@
-/Library/*
-.vs/*
-/[Tt]emp/*
-/bin/*
-/obj/Debug/*
+Library/
+.vs/
+[Tt]emp/
+bin/
+obj/Debug/
