@@ -3,3 +3,5 @@ Library/
 [Tt]emp/
 bin/
 obj/Debug/
+*.log
+Logs/Packages-Update.log
