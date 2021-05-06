@@ -29,7 +29,7 @@ namespace Player
 
             WalkSlow = 0.1f;
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-            ChangeJumpHeight(15);
+            SetJumpHeight(15);
             if (isGrounded && Velocity.y < 0)
             {
                 Velocity.y = -1f;
@@ -95,7 +95,7 @@ namespace Player
             Velocity.y = JumpHeight;
         }
 
-        public void ChangeJumpHeight(byte HeightChange)
+        public void SetJumpHeight(byte HeightChange)
         {
             JumpHeight = HeightChange;
         }
