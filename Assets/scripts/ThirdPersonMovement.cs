@@ -10,26 +10,31 @@ namespace Player
         public Transform cam;
         public float speed = 12f;
         public float TurnTime = 0.1f;
-        float TurnSmoothVelocity;
+        public float TurnSmoothVelocity;
         public float gravity = -35f;
         public Transform groundCheck;
         public float groundDistance = 0.4f;
         public LayerMask groundMask;
-        float yVelocity;
-        float WalkSlow;
-        float WalkSlowVolx;
-        float WalkSlowVolz;
-        byte JumpHeight;
+        public float yVelocity;
+        public float WalkSlow;
+        public float WalkSlowVolx;
+        public float WalkSlowVolz;
+        public byte JumpHeight;
 
         Vector3 Velocity;
         bool isGrounded;
+
+        void Start()
+        {
+            SetJumpHeight(15);
+        }
+
         // Update is called once per frame
         void Update()
         {
 
             WalkSlow = 0.1f;
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-            SetJumpHeight(15);
             if (isGrounded && Velocity.y < 0)
             {
                 Velocity.y = -1f;
