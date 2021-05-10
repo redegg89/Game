@@ -6,7 +6,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 
-class Debug : MonoBehaviour
+class Debug
 {
     public static bool OpenConsole = false;
     void Start()

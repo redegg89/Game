@@ -7,10 +7,10 @@ using UnityEngine;
 internal class PluginLoader : MonoBehaviour
 {
     private const string PLUGIN_DIR = "Plugins";
-    private const bool LOAD_PLUGINS_IN_EDITOR = true;
+    private const bool LOAD_PLUGINS_IN_EDITOR = false;
 
     /// <summary>
-    /// Get all currently loaded game plugins.
+    /// Get all currently loaded ChroMapper plugins.
     /// This does NOT include plugins added by external mod loaders (BepinEx, IPA, BSIPA, etc.)
     /// </summary>
     public static IReadOnlyList<Plugin> LoadedPlugins => plugins.AsReadOnly();
