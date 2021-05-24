@@ -5,3 +5,4 @@ bin/
 obj/Debug/
 *.log
 Logs/Packages-Update.log
+Assets/Fonts/Curse Casual.ttf
