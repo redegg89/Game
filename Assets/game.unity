@@ -840,8 +840,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 421444472}
-  m_LocalRotation: {x: 0.06411686, y: 0.000000011047895, z: 0.0000000028279843, w: 0.9979424}
-  m_LocalPosition: {x: 15.440782, y: -0.14098562, z: -15.838713}
+  m_LocalRotation: {x: 0.04475615, y: 0.71414804, z: -0.052270096, w: 0.69660413}
+  m_LocalPosition: {x: -0.9855814, y: 0.008999084, z: 1.0109818}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 120544470}
@@ -1465,6 +1465,7 @@ GameObject:
   - component: {fileID: 792035555}
   - component: {fileID: 792035554}
   - component: {fileID: 792035556}
+  - component: {fileID: 792035557}
   m_Layer: 0
   m_Name: PluginLoader
   m_TagString: Untagged
@@ -1512,6 +1513,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadedPluginCount: {fileID: 1343567445}
   pluginInfoPrefab: {fileID: 792035553}
+  parentLayoutGroup: {fileID: 0}
+--- !u!114 &792035557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792035553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa74e3f15bfb4254292d4c2bf8e5f0d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 1343567445}
+  versionText: {fileID: 0}
 --- !u!1 &808287795
 GameObject:
   m_ObjectHideFlags: 0
@@ -3263,7 +3279,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787449777}
   m_LocalRotation: {x: 0.092099674, y: 0.7089293, z: -0.10079111, w: 0.6919379}
-  m_LocalPosition: {x: 0, y: 5.305396e-10, z: 0.000000059602282}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 65653581}
