@@ -1,0 +1,34 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/beat-saber-modding-group/BSIPA-MetadataFileSchema/master/Schema.json",
+  "author": "DaNike",
+  "description": [
+    "#![IPA.Loader.description.md]",
+    "A mod loader specifically for Beat Saber."
+  ],
+  "gameVersion": "1.16.1",
+  "id": "BSIPA",
+  "name": "Beat Saber IPA",
+  "version": "4.2.0-pre.7",
+  "icon": "IPA.icon_white.png",
+  "features": {
+    "IPA.DefineFeature": {
+      "type": "IPA.Loader.Features.ConfigProviderFeature",
+      "name": "IPA.ConfigProvider"
+    }
+  },
+  "links": {
+    "project-home": "https://bsmg.github.io/BeatSaber-IPA-Reloaded/index.html",
+    "project-source": "https://github.com/bsmg/BeatSaber-IPA-Reloaded",
+    "donate": "https://ko-fi.com/danike"
+  },
+  "files": [
+    "IPA.exe",
+    "winhttp.dll",
+    "Libs/0Harmony.dll",
+    "Libs/Ionic.Zip.dll",
+    "Libs/Newtonsoft.Json.dll",
+    "Libs/Mono.Cecil.dll",
+    "Libs/SemVer.dll",
+    "Libs/Hive.Versioning.dll"
+  ]
+}

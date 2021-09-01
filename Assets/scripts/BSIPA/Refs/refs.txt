@@ -1,0 +1,24 @@
+::from ./bsinstalldir.txt
+"Beat Saber_Data/
+""Managed/
+"""UnityEngine.
+""""dll?alias=UnityEngine.Net4.dll
+""""xml?alias=UnityEngine.Net4.xml?optional
+""""UnityWebRequestModule.
+"""""dll?alias=UnityEngine.UnityWebRequestModule.Net4.dll
+"""""xml?alias=UnityEngine.UnityWebRequestModule.Net4.xml?optional
+""""CoreModule.
+"""""dll?alias=UnityEngine.CoreModule.Net4.dll
+"""""xml?alias=UnityEngine.CoreModule.Net4.xml?optional
+
+::startopt
+::from ./mdinstalldir.txt
+"MuseDash_Data/
+""Managed/
+"""UnityEngine.
+""""dll?alias=UnityEngine.Net3.dll
+""""UnityWebRequestModule.
+"""""dll?alias=UnityEngine.UnityWebRequestModule.Net3.dll
+""""CoreModule.
+"""""dll?alias=UnityEngine.CoreModule.Net3.dll
+::endopt

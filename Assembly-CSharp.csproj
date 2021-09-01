@@ -55,37 +55,187 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Stores\GeneratedStoreImpl\Correction.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Stores\GeneratedStoreImpl\MakeCreator.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA\Program.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Injector\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Utilities\Accessor.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Injector\Backups\BackupUnit.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\PluginMetadata.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Stores\GeneratedStoreImpl\Deserialization.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\AntiMalware\AntiMalwareEngine.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Utilities\Extensions.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Stores\GeneratedStoreImpl\Serialization.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA\Arguments.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA\_Attributes.cs" />
      <Compile Include="Assets\scripts\ThirdPersonMovement.cs" />
+     <Compile Include="Assets\scripts\BSIPA\Net3-Proxy\TypeUtils.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Stores\ValueConverter.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Stores\CollectionConverter.cs" />
      <Compile Include="Assets\scripts\PluginLoader\UI\PluginInfoContainer.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA\Patcher\BackupManager.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA\Properties\AssemblyInfo.cs" />
      <Compile Include="Assets\scripts\Interactable.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Stores\GeneratedStoreImpl\Utility.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Utilities\CriticalSection.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\PluginManifest.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Injector\Updates.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA\PatchContext.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Utilities\Async\UnityMainThreadTaskScheduler.cs" />
      <Compile Include="Assets\scripts\PluginLoader\Plugin.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Logging\Printers\ColoredConsolePrinter.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\PluginInitInjector.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\CannotRuntimeDisableException.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\JsonConverters\AlmostVersionConverter.cs" />
      <Compile Include="Assets\scripts\AI\Test\Buddy_Loyalty.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Data\Primitives.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Utilities\Async\Synchronization.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Stores\Attributes.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Logging\Logger.cs" />
      <Compile Include="Assets\scripts\PluginLoader\Attributes\InitAttribute.cs" />
+     <Compile Include="Assets\scripts\BSIPA\Net3-Proxy\Utils.cs" />
+     <Compile Include="Assets\scripts\BSIPA\Net3-Proxy\Array.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Tests\ProgramTest.cs" />
+     <Compile Include="Assets\scripts\BSIPA\SemVer\obj\Debug\net461\SemVer.AssemblyInfo.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\AntiMalware\_HideInNet3\ComAPI\AmsiMemoryStream.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\Composite\CompositeIPAPlugin.cs" />
+     <Compile Include="Assets\scripts\BSIPA\Net3-Proxy\TaskEx6.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\AntiMalware\NoopAntiMalware.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Config.cs" />
      <Compile Include="Assets\scripts\PluginLoader\Attributes\NotePassedThresholdAttribute.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\PluginInterfaces\Attributes\LifecycleAttributes.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Injector\Virtualizer.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Data\Value.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\AntiMalware\_HideInNet3\WindowsCOMAntiMalware.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Injector\PermissionFix.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Providers\JsonConfigProvider.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\Features\ConfigProviderFeature.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Injector\Injector.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Utilities\Ref.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\Composite\CompositeBSPlugin.cs" />
+     <Compile Include="Assets\scripts\BSIPA\Doorstop\DoorstopTest\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Stores\GeneratedStoreImpl\ObjectStructure.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Data\List.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Updating\BeatMods\ApiEndpoint.cs" />
      <Compile Include="Assets\scripts\PluginLoader\Attributes\ExitAttribute.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Stores\GeneratedStoreImpl\ConversionDelegates.cs" />
      <Compile Include="Assets\scripts\dbg\UI.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Tests\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\scripts\BSIPA\Doorstop\DoorstopTest\Loader.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Stores\GeneratedStoreImpl\IGeneratedStore.cs" />
+     <Compile Include="Assets\scripts\BSIPA\SemVer\Range.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\PluginLoader.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Logging\Printers\GlobalLogFilePrinter.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\JsonConverters\SemverRangeConverter.cs" />
+     <Compile Include="Assets\scripts\BSIPA\Net3-Proxy\Directory.cs" />
+     <Compile Include="Assets\scripts\BSIPA\SemVer\Version.cs" />
      <Compile Include="Assets\scripts\Quit.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Utilities\Utils.cs" />
      <Compile Include="Assets\scripts\CameraSwitch.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Injector\AntiPiracy.cs" />
      <Compile Include="Assets\scripts\API\Math.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA\Patcher\BackupUnit.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Logging\StdoutInterceptor.cs" />
+     <Compile Include="Assets\scripts\BSIPA\SemVer\obj\Release\net461\SemVer.AssemblyInfo.cs" />
      <Compile Include="Assets\scripts\PluginLoader\UI\LoadedPluginsController.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Utilities\Async\SingleThreadTaskScheduler.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Tests\ShortcutTest.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\Features\DefineFeature.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\PluginInterfaces\IPA\IPlugin.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Utilities\Win32.cs" />
+     <Compile Include="Assets\scripts\BSIPA\Net3-Proxy\Path.cs" />
+     <Compile Include="Assets\scripts\BSIPA\Net3-Proxy\WeakReference.cs" />
      <Compile Include="Assets\scripts\Tutorial.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\JsonConverters\FeaturesFieldConverter.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Logging\ConsoleWindow.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\SelfConfig.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Logging\Printers\PluginLogFilePrinter.cs" />
+     <Compile Include="Assets\scripts\BSIPA\Net3-Proxy\File.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\IConfigStore.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\IniFile.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Utilities\EnumerableExtensions.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Stores\GeneratedStorePublicInterface.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\AntiMalware\AmsiConstants.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\LibLoader.cs" />
      <Compile Include="Assets\scripts\PluginLoader\PluginLoader.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\JsonConverters\SemverVersionConverter.cs" />
      <Compile Include="Assets\scripts\Global\Timer.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\PluginInterfaces\IPA\IEnhancedPlugin.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Utilities\Async\Coroutines.cs" />
+     <Compile Include="Assets\scripts\BSIPA\Net3-Proxy\ReadOnlyCollections.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Logging\LogPrinter.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\AntiMalware\ScanResult.cs" />
      <Compile Include="Assets\scripts\PluginLoader\Attributes\EventPassedThresholdAttribute.cs" />
+     <Compile Include="Assets\scripts\BSIPA\Net3-Proxy\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\scripts\BSIPA\Net3-Proxy\Extensions.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\Features\Feature.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Utilities\AlmostVersion.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\AntiMalware\IAntiMalware.cs" />
+     <Compile Include="Assets\scripts\BSIPA\Net3-Proxy\CompilerServices.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Utilities\UnityGame.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Logging\Printers\GZFilePrinter.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Data\Map.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\IConfigProvider.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Logging\StandardLogger.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\PluginExecutor.cs" />
+     <Compile Include="Assets\scripts\BSIPA\docs\articles\dev-resources\Plugin.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\AntiMalware\_HideInNet3\ComAPI\IAntimalware.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Logging\UnityLogProvider.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Stores\GeneratedStoreCollections.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\JsonConverters\MultilineStringConverter.cs" />
+     <Compile Include="Assets\scripts\BSIPA\Net3-Proxy\ExpressionEx.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\AntiMalware\_HideInNet3\ComAPI\AmsiFileStream.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Stores\GeneratedStoreImpl\GeneratedStoreImpl.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\StateTransitionTransaction.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\HarmonyProtector.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\ModPrefs.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Logging\Printers\ColorlessConsolePrinter.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Logging\Printers\PluginSubLogPrinter.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Injector\GameVersionEarly.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\ConfigRuntime.cs" />
+     <Compile Include="Assets\scripts\BSIPA\System.Diagnostics.CodeAnalysis.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Injector\Backups\BackupManager.cs" />
      <Compile Include="Assets\scripts\PluginLoader\Attributes\ObjectLoaded.cs" />
+     <Compile Include="Assets\scripts\BSIPA\docs\articles\dev-resources\PluginConfig.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\DependencyResolutionLoopException.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\PluginComponent.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Utilities\ReflectionUtil.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\PluginManager.cs" />
      <Compile Include="Assets\scripts\PluginLoader\Attributes\PluginAttribute.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\PluginInterfaces\Attributes\PluginAttribute.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Loader\DisabledConfig.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Updating\BeatMods\Updater.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\AntiMalware\WindowsWin32AntiMalware.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Stores\Converters.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Utilities\Async\SingleCreationValueCache.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\Config\Stores\CustomObjectConverter.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Loader\AntiMalware\AmsiResult.cs" />
+     <Compile Include="Assets\scripts\BSIPA\Net3-Proxy\Tuple.cs" />
+     <Compile Include="Assets\scripts\BSIPA\IPA.Injector\Bootstrapper.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\scripts\BSIPA\Refs\refs.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\scripts\BSIPA\Net3-Proxy\obj\Debug\net35\Net3-Proxy.csproj.FileListAbsolute.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\scripts\BSIPA\IPA\obj\Debug\netcoreapp3.1\IPA.csproj.FileListAbsolute.txt" />
+     <None Include="Assets\scripts\BSIPA\SemVer\obj\Debug\net461\SemVer.csproj.FileListAbsolute.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\scripts\BSIPA\Libs\thirdparty\Hive.Versioning.xml" />
+     <None Include="Assets\scripts\BSIPA\Doorstop\Proxy\proxydefs.txt" />
+     <None Include="Assets\scripts\BSIPA\IPA.Loader\obj\Debug\net472\IPA.Loader.xml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\scripts\BSIPA\IPA\obj\Debug\net472\IPA.csproj.FileListAbsolute.txt" />
+     <None Include="Assets\scripts\BSIPA\IPA.Injector\obj\Debug\net472\IPA.Injector.csproj.FileListAbsolute.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\scripts\BSIPA\Doorstop\proxygen\winhttp.txt" />
+     <None Include="Assets\scripts\BSIPA\IPA.Loader\obj\Debug\net472\IPA.Loader.csproj.FileListAbsolute.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
@@ -368,8 +518,62 @@
  <Reference Include="UnityEngine.XRModule">
  <HintPath>D:/Program Files/Unity/Hub/Editor/2020.1.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
  </Reference>
- <Reference Include="0Harmony">
- <HintPath>D:/Users/Andrew/RPG/Game/Assets/Plugins/Harmony/0Harmony.dll</HintPath>
+ <Reference Include="IPA">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/IPA/obj/Debug/netcoreapp3.1/IPA.dll</HintPath>
+ </Reference>
+ <Reference Include="IPA.Injector">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/IPA.Injector/obj/Debug/net472/IPA.Injector.dll</HintPath>
+ </Reference>
+ <Reference Include="IPA.Loader">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/IPA.Loader/obj/Debug/net472/IPA.Loader.dll</HintPath>
+ </Reference>
+ <Reference Include="I18N.net3">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/Libs/I18N.net3.dll</HintPath>
+ </Reference>
+ <Reference Include="I18N.Net4">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/Libs/I18N.Net4.dll</HintPath>
+ </Reference>
+ <Reference Include="I18N.West.net3">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/Libs/I18N.West.net3.dll</HintPath>
+ </Reference>
+ <Reference Include="I18N.West.net4">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/Libs/I18N.West.net4.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CSharp">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/Libs/Microsoft.CSharp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.net3">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/Libs/System.Runtime.Serialization.net3.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.net4">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/Libs/System.Runtime.Serialization.net4.dll</HintPath>
+ </Reference>
+ <Reference Include="Hive.Versioning">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/Libs/thirdparty/Hive.Versioning.dll</HintPath>
+ </Reference>
+ <Reference Include="Net3-Proxy">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/Net3-Proxy/obj/Debug/net35/Net3-Proxy.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule.net3">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/Refs/UnityEngine.CoreModule.net3.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule.Net4">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/Refs/UnityEngine.CoreModule.Net4.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.net3">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/Refs/UnityEngine.net3.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Net4">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/Refs/UnityEngine.Net4.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule.net3">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/Refs/UnityEngine.UnityWebRequestModule.net3.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule.Net4">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/Refs/UnityEngine.UnityWebRequestModule.Net4.dll</HintPath>
+ </Reference>
+ <Reference Include="SemVer">
+ <HintPath>D:/Users/Andrew/RPG/Game/Assets/scripts/BSIPA/SemVer/obj/Debug/net461/SemVer.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
  <HintPath>D:/Users/Andrew/RPG/Game/Library/PackageCache/com.unity.analytics@3.5.3/Unity.Analytics.Editor.dll</HintPath>
@@ -388,9 +592,6 @@
  </Reference>
  <Reference Include="System.Core">
  <HintPath>D:/Program Files/Unity/Hub/Editor/2020.1.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.Serialization">
- <HintPath>D:/Program Files/Unity/Hub/Editor/2020.1.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="System.Xml">
  <HintPath>D:/Program Files/Unity/Hub/Editor/2020.1.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>

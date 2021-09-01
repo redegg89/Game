@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+
+  <PropertyGroup>
+    <!--<PathMap>$(SolutionDir)=C:\</PathMap>-->
+    <DebugType>portable</DebugType>
+    <LangVersion>9</LangVersion>
+    <NoWarn>CA1031;CA1305;CA1303</NoWarn>
+    <Nullable>disable</Nullable>
+    <WarningsAsErrors>$(WarningsAsErrors);nullable</WarningsAsErrors>
+    <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+    <AnalysisLevel>latest</AnalysisLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" />
+  </ItemGroup>
+  
+</Project>
