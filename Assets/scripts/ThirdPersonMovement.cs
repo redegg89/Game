@@ -77,7 +77,7 @@ namespace Player
             controller.Move(Velocity * Time.deltaTime);
 
             //Basic controls
-            bool A = Input.GetButtonDown("Submit");
+            bool A = Input.GetButtonDown("A");
             if (A == true)
             {
                 Jump();
