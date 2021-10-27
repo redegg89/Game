@@ -13,11 +13,6 @@ public class FullscreenToggle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        if(Input.GetButtonDown("F11") == true) 
-        {
-            Screen.fullScreen = !Screen.fullScreen;
-
-        }
+        
     }
 }

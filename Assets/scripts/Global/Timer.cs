@@ -4,7 +4,7 @@ namespace Global
 {
     public class Timer : MonoBehaviour
     {
-        public short GlobalTimer;
+        public long GlobalTimer;
         // Start is called before the first frame update
         void Start()
         {
