@@ -319,6 +319,8 @@ Assets/_TerrainAutoUpgrade/
 /[Aa]ssets/AddressableAssetsData/Windows
 /[Aa]ssets/AddressableAssetsData/Windows.meta
 /[Aa]ssets/StreamingAssets.meta
+/[Aa]ssets/Plugins/x86*/*
+/[Aa]ssets/Plugins/Discord*
 /Plugins
 *.vsconfig
 Assets/Fonts/Curse Casual.ttf

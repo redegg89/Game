@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using Global;
 using Player;
 using API;
+using locale;
 
 public class UI : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class UI : MonoBehaviour
     {
         DebugCanvas.SetActive(false);
         DebugMenuDisabled = false;
+        lang.initDebug();
     }
 
     void Update()
@@ -41,8 +43,8 @@ public class UI : MonoBehaviour
             DebugCanvas.SetActive(false);
             DebugMenuDisabled = false;
         }
-        SpeedonUI.text = "Speed: " + Player.speed.ToString();
-        GlobalTimerUI.text = "Global Timer: " + timer.GlobalTimer.ToString();
+        SpeedonUI.text = lang.Speed + ": " + Player.speed.ToString();
+        GlobalTimerUI.text = lang.GlobalTimer + ": " + timer.GlobalTimer.ToString();
         //FPS count (https://forum.unity.com/threads/fps-counter.505495/)
         if (Time.unscaledTime > _timer)
         {
