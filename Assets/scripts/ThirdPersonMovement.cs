@@ -32,13 +32,13 @@ namespace Player
         // Update is called once per frame
         void Update()
         {
-
             WalkSlow = 0.1f;
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
             if (isGrounded && Velocity.y < 0)
             {
                 Velocity.y = -1f;
             }
+            
             //Movement
             float horizontal = Input.GetAxisRaw("Vertical");        //controller
             float vertical = Input.GetAxisRaw("Horizontal");
@@ -77,8 +77,7 @@ namespace Player
             controller.Move(Velocity * Time.deltaTime);
 
             //Basic controls
-            bool A = Input.GetButtonDown("A");
-            if (A == true)
+            if (Input.GetButtonDown("A") == true)
             {
                 Jump();
             }
