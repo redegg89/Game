@@ -8,10 +8,10 @@ namespace Player
     {
         public CharacterController controller;
         public Transform cam;
-        public float speed = 12f;
+        public float speed;
         public float TurnTime = 0.1f;
         public float TurnSmoothVelocity;
-        public float gravity = -35f;
+        public float gravity;
         public Transform groundCheck;
         public float groundDistance = 0.4f;
         public LayerMask groundMask;
@@ -27,6 +27,8 @@ namespace Player
         void Start()
         {
             SetJumpHeight(15);
+            SetSpeed(12);
+            SetGravity(-35);
         }
 
         // Update is called once per frame
@@ -41,7 +43,7 @@ namespace Player
             
             //Movement
             float horizontal = Input.GetAxisRaw("Vertical");        //controller
-            float vertical = Input.GetAxisRaw("Horizontal");
+            float vertical = Input.GetAxisRaw("Horizontal");        //Yes I did mix up my axes, how could you tell?
 
             float KBHori = Input.GetAxisRaw("Keyboard W");      //keyboard
             float KBVert = Input.GetAxisRaw("Keyboard A");
@@ -99,9 +101,19 @@ namespace Player
             Velocity.y = JumpHeight;
         }
 
-        public void SetJumpHeight(byte HeightChange)
+        public void SetJumpHeight(byte NewJump)
         {
-            JumpHeight = HeightChange;
+            JumpHeight = NewJump;
+        }
+
+        public void SetSpeed(short NewSpeed)
+        {
+            speed = NewSpeed;
+        }
+
+        public void SetGravity(short NewGravity)
+        {
+            gravity = NewGravity;
         }
     }
 }

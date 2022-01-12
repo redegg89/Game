@@ -11,7 +11,7 @@ namespace Global
 
         void Update()
         {
-            GlobalTimer += 1;
+            GlobalTimer ++;
         }
     }
 }
