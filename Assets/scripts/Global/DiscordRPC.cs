@@ -1,6 +1,7 @@
 using System;
 using Discord;
 using UnityEngine;
+using locale;
 
 public class DiscordRPC : MonoBehaviour
 {
@@ -12,8 +13,8 @@ public class DiscordRPC : MonoBehaviour
         var activityManager = discord.GetActivityManager();
 
         var activity = new Discord.Activity{
-            State = "Dev-ing",
-            Details = "No clue what I'm doing",
+            State = lang.RPCState,
+            Details = lang.RPCDetails,
             Timestamps =
             {
                 Start = elapsed,
