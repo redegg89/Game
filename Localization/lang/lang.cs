@@ -14,8 +14,8 @@
         }
         public static void initDiscord()
         {
-            RPCState = "Dev-ing"
-            RPCDetails = "No clue what I'm doing"
+            RPCState = "Dev-ing";
+            RPCDetails = "No clue what I'm doing";
         }
     }
 }
