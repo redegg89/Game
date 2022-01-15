@@ -324,3 +324,4 @@ Assets/_TerrainAutoUpgrade/
 *.vsconfig
 Assets/Fonts/Curse Casual.ttf
 Assembly-CSharp.csproj
+/UserSettings
