@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Player
 {
-    public class ThirdPersonMovement : MonoBehaviour
+    public class main : MonoBehaviour
     {
         public CharacterController controller;
         public Transform cam;
