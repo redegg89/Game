@@ -1,6 +1,7 @@
 ﻿using API;
 using Global;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Player
 {
@@ -29,6 +30,7 @@ namespace Player
             SetJumpHeight(15);
             SetSpeed(12);
             SetGravity(-35);
+            DontDestroyOnLoad(gameObject);
         }
 
         // Update is called once per frame

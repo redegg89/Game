@@ -15,7 +15,7 @@ public class UI : MonoBehaviour
 
     //Variables for cross-file stuff
     public Timer timer;
-    public ThirdPersonMovement Player;
+    public main Player;
     public Math math;
     public FPSCount framerate;
 
