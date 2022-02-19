@@ -29,12 +29,13 @@ namespace Player
             SetJumpHeight(15);
             SetSpeed(12);
             SetGravity(-35);
+            DontDestroyOnLoad(gameObject);
         }
 
         // Update is called once per frame
         void Update()
         {
-            WalkSlow = 0.1f;
+            WalkSlow = 0.2f;
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
             if (isGrounded && Velocity.y < 0)
             {
