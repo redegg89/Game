@@ -36,7 +36,7 @@ namespace Player
         // Update is called once per frame
         void Update()
         {
-            WalkSlow = 0.1f;
+            WalkSlow = 0.2f;
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
             if (isGrounded && Velocity.y < 0)
             {

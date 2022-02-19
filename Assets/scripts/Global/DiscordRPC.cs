@@ -8,7 +8,6 @@ public class DiscordRPC : MonoBehaviour
     public Discord.Discord discord;
     void Start()
     {
-        lang.initDiscord();
         long elapsed = DateTimeOffset.Now.ToUnixTimeSeconds();
         discord = new Discord.Discord(838809067203854346, (System.UInt64)Discord.CreateFlags.NoRequireDiscord);
         var activityManager = discord.GetActivityManager();
