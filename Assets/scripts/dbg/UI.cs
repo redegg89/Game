@@ -28,7 +28,6 @@ public class UI : MonoBehaviour
     {
         DebugCanvas.SetActive(false);
         DebugMenuDisabled = false;
-        lang.initDebug();
     }
 
     void Update()
