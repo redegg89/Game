@@ -1,6 +1,7 @@
 ﻿using API;
 using Global;
 using UnityEngine;
+using stats;
 
 namespace Player
 {
@@ -116,5 +117,6 @@ namespace Player
         {
             gravity = NewGravity;
         }
+
     }
 }
