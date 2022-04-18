@@ -20,28 +20,27 @@ public class UI : MonoBehaviour
     public FPSCount framerate;
 
     //misc vars
-    bool DebugMenuDisabled;
+    //public bool DebugMenuDisabled;    Just a reminder this exists
     private float _timer;
     float fpsRefreshRate = 1f;
 
+    #if (DEVELOPMENT_BUILD || UNITY_EDITOR)
+        public bool DebugMenuDisabled = false;
+    #else
+        public bool DebugMenuDisabled = true;
+    #endif
+
     void Start()
     {
-        DebugCanvas.SetActive(false);
-        DebugMenuDisabled = false;
     }
 
     void Update()
     {
-        if(Input.GetButtonDown("F3") & DebugMenuDisabled == false)
+        if(Input.GetButtonDown("F3"))
         {
-            DebugCanvas.SetActive(true);
-            DebugMenuDisabled = true;
+            DebugMenuDisabled = !DebugMenuDisabled;
         }
-        else if(Input.GetButtonDown("F3") & DebugMenuDisabled == true)
-        {
-            DebugCanvas.SetActive(false);
-            DebugMenuDisabled = false;
-        }
+        DebugCanvas.SetActive(!DebugMenuDisabled);
         SpeedonUI.text = lang.Speed + ": " + Player.speed.ToString();
         GlobalTimerUI.text = lang.GlobalTimer + ": " + timer.GlobalTimer.ToString();
         //FPS count (https://forum.unity.com/threads/fps-counter.505495/)

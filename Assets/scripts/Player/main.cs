@@ -2,6 +2,7 @@
 using Global;
 using UnityEngine;
 using stats;
+using SharpConfig;
 
 namespace Player
 {
@@ -24,13 +25,14 @@ namespace Player
 
         Vector3 Velocity;
         bool isGrounded;
-
         void Start()
         {
             SetJumpHeight(15);
             SetSpeed(12);
             SetGravity(-35);
             DontDestroyOnLoad(gameObject);
+            var playerstats = new Stats();
+            var playerstatsconfig = Configuration.LoadFromFile("stats.ini");
         }
 
         // Update is called once per frame
@@ -94,6 +96,8 @@ namespace Player
             {
                 speed = speed - 1;
             }
+
+
 
             Cursor.visible = false;
         }
