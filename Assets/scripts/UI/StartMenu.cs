@@ -118,6 +118,8 @@ public class StartMenu : MonoBehaviour {
                     #if (DEVELOPMENT_BUILD || UNITY_EDITOR)
                     ShowDevelUI();
                     numberOfOptions = 1;
+                    #else
+                    SceneManager.LoadScene("Game");
                     #endif
                     break;
                 case 2:
@@ -130,6 +132,7 @@ public class StartMenu : MonoBehaviour {
         }
 
     }
+    #if (DEVELOPMENT_BUILD || UNITY_EDITOR)
     void ShowDevelUI()
     {
         ColorBlock selected = SelectedButton.colors;
@@ -143,4 +146,5 @@ public class StartMenu : MonoBehaviour {
         UnderstandButton.colors = selected;
         Understand.color = new Color32(255, 255, 255, 255);
     }
+    #endif
 }
