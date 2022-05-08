@@ -1,12 +1,10 @@
 ﻿using API;
 using Global;
 using UnityEngine;
-using stats;
-using SharpConfig;
 
 namespace Player
 {
-    public class main : MonoBehaviour
+    public class movement : MonoBehaviour
     {
         public CharacterController controller;
         public Transform cam;
@@ -31,8 +29,6 @@ namespace Player
             SetSpeed(12);
             SetGravity(-35);
             DontDestroyOnLoad(gameObject);
-            var playerstats = new Stats();
-            var playerstatsconfig = Configuration.LoadFromFile("stats.ini");
         }
 
         // Update is called once per frame

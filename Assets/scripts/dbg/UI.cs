@@ -14,8 +14,8 @@ public class UI : MonoBehaviour
     public Text FPS;
 
     //Variables for cross-file stuff
+    public movement Player;
     public Timer timer;
-    public main Player;
     public Math math;
     public FPSCount framerate;
 
@@ -29,10 +29,6 @@ public class UI : MonoBehaviour
     #else
         public bool DebugMenuDisabled = true;
     #endif
-
-    void Start()
-    {
-    }
 
     void Update()
     {

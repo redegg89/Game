@@ -12,6 +12,13 @@ public class StartMenu : MonoBehaviour {
     public Text option3;
     public Button option3Button;
 
+    #if (DEVELOPMENT_BUILD || UNITY_EDITOR)
+    public Text Understand;
+    public Button UnderstandButton;
+    public GameObject StartCanvas;
+    #endif
+    public GameObject UnderstandCanvas;
+    bool UnderstandTextShown;
     public Button SelectedButton;
     public Button DeselectedButton;
 
@@ -31,6 +38,7 @@ public class StartMenu : MonoBehaviour {
         option2Button.colors = deselected;
         option3.color = new Color32(0, 0, 0, 255);
         option3Button.colors = deselected;
+        UnderstandCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -67,7 +75,7 @@ public class StartMenu : MonoBehaviour {
                 option3Button.colors = selected;
                 break;
         }
-            Thread.Sleep(300);
+            Thread.Sleep(300); //quick fix for the menu being way too fucking fast
         }
 
         if (Input.GetAxisRaw("Keyboard W") >= 0.1f || Input.GetAxisRaw("Vertical") >= 0.1f)
@@ -99,24 +107,40 @@ public class StartMenu : MonoBehaviour {
                     option3Button.colors = selected;
                     break;
             }
-            Thread.Sleep(300);
+            Thread.Sleep(300); //quick fix for the menu being way too fucking fast
         }
 
         if (Input.GetKeyDown(KeyCode.Return) ||  Input.GetKeyDown("joystick button 0")){
-            Debug.Log("Picked: " + selectedOption); //For testing as the switch statment does nothing right now.
 
             switch (selectedOption) //Set the visual indicator for which option you are on.
             {
                 case 1:
-                    SceneManager.LoadScene("Game");
+                    #if (DEVELOPMENT_BUILD || UNITY_EDITOR)
+                    ShowDevelUI();
+                    numberOfOptions = 1;
+                    #endif
                     break;
                 case 2:
-                    /*Do option two*/
+                    /*Settings Menu or something*/
                     break;
                 case 3:
                     Application.Quit();
                     break;
             }
         }
+
+    }
+    void ShowDevelUI()
+    {
+        ColorBlock selected = SelectedButton.colors;
+        ColorBlock deselected = DeselectedButton.colors;
+        UnderstandCanvas.SetActive(true);
+        StartCanvas.SetActive(false);
+        if (Input.GetKeyDown(KeyCode.Return) ||  Input.GetKeyDown("joystick button 0") && UnderstandTextShown == true){
+            SceneManager.LoadScene("Game");
+        }
+        UnderstandTextShown = true;
+        UnderstandButton.colors = selected;
+        Understand.color = new Color32(255, 255, 255, 255);
     }
 }
