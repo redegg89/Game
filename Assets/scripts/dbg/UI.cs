@@ -12,6 +12,9 @@ public class UI : MonoBehaviour
     public Text SpeedonUI;
     public GameObject DebugCanvas;
     public Text FPS;
+    public Text velocityX;
+    public Text velocityY;
+    public Text velocityZ;
 
     //Variables for cross-file stuff
     public movement Player;
@@ -39,6 +42,9 @@ public class UI : MonoBehaviour
         DebugCanvas.SetActive(!DebugMenuDisabled);
         SpeedonUI.text = lang.Speed + ": " + Player.speed.ToString();
         GlobalTimerUI.text = lang.GlobalTimer + ": " + timer.GlobalTimer.ToString();
+        velocityX.text = lang.xVelocity + ": " + Player.Velocity.x.ToString();
+        velocityY.text = lang.yVelocity + ": " + Player.Velocity.y.ToString();
+        velocityZ.text = lang.zVelocity + ": " + Player.Velocity.z.ToString();
         //FPS count (https://forum.unity.com/threads/fps-counter.505495/)
         if (Time.unscaledTime > _timer)
         {

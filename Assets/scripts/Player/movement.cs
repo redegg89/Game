@@ -21,7 +21,7 @@ namespace Player
         public float WalkSlowVolz;
         public byte JumpHeight;
 
-        Vector3 Velocity;
+        public Vector3 Velocity;
         bool isGrounded;
         void Start()
         {

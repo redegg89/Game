@@ -2,7 +2,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Threading;
-
+using locale;
+//https://gamedev.stackexchange.com/questions/172842/unity-menu-navigation-using-keyboard-controller-input
 public class StartMenu : MonoBehaviour {
 
     public Text option1;
@@ -39,6 +40,9 @@ public class StartMenu : MonoBehaviour {
         option3.color = new Color32(0, 0, 0, 255);
         option3Button.colors = deselected;
         UnderstandCanvas.SetActive(false);
+        option1.text = lang.Start;
+        option2.text = lang.Options;
+        option3.text = lang.Quit;
     }
 
     // Update is called once per frame
