@@ -399,6 +399,7 @@ GameObject:
   - component: {fileID: 722017333}
   - component: {fileID: 722017332}
   - component: {fileID: 722017335}
+  - component: {fileID: 722017336}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -473,12 +474,27 @@ MonoBehaviour:
   option2Button: {fileID: 1879519015}
   option3: {fileID: 1914328833}
   option3Button: {fileID: 1731817263}
+  startgame: {fileID: 722017336}
   Understand: {fileID: 823949959}
   UnderstandButton: {fileID: 1321603136}
   StartCanvas: {fileID: 855938258}
   UnderstandCanvas: {fileID: 849448334}
+  UnderstandTextShown: 0
   SelectedButton: {fileID: 998241907}
   DeselectedButton: {fileID: 1875594685}
+--- !u!114 &722017336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722017331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9adacc282d0ea9af780a7d4ae206e511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Menu: {fileID: 722017335}
 --- !u!1 &823949957
 GameObject:
   m_ObjectHideFlags: 0
