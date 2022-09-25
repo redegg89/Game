@@ -38,7 +38,7 @@ namespace Player
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
             if (isGrounded && Velocity.y < 0)
             {
-                Velocity.y = -1f;
+                Velocity.y = 0f;
             }
             
             //Movement
